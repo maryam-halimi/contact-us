@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Contact form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="successs">
+    <pre id="success">       message send
+ thank you for completing form!
+  </pre>
+  </div>
+  <form id="container" method="post">
+    <pre class="h1"><h1>
+    contact us
+  </h1></pre>
+    <div class="name-sureName">
+      <div>
+        <pre class="first-name "><label for="first-name-input">FirstName *</label></pre>
+
+        <input type="text" id="first-name-input" class=" input" onpaste="return false;" name="firstname">
+        <pre><span id="error1" class="error">this fild is required</span></pre>
+
+      </div>
+
+      <div>
+        <pre class="last-name "><label for="last-name-input">lastName *</label></pre>
+
+        <input type="text" id="last-name-input" class="input" onpaste="return false;" name="lastname">
+        <pre><span id="error2"  class="error">this fild is required</span></pre>
+      </div>
+    </div>
+    <div class="emails">
+      <pre id="email-address" class="text"><label for="mail-address">email Address *</label></pr>
+</div><div class="email-text">
+  <input id="mail-address" class="input-em  input" type="text" onpaste="return false;"  name="email">
+  
+</div><pre><span id="error3" class="error">this fild is required</span></pre>
+      <pre class="query-type   ">query Typ *</pre>
+
+      <div class="query">
+        <pre id="radio" class="box-radio g-query">
+  <input type="radio" value="General Enquiry" text="General" id="General" name="g-en"><label for="General">General Enquiry</label>
+</pre>
+        <pre id="radios" class="box-radio s-requst ">
+  <input type="radio" value="support Request" id="support" name="g-en"><label for="support" >Support Request</label>
+</pre>
+      </div>
+      <pre><span  id="error4" class="error">this fild is required</span></pre>
+      <div class="message">
+        <pre class="message "><label for="textarea">message *</label></pre>
+
+        <input class="messagee  input " id="textarea" name="textmessage" onpaste="return false;"></input>
+        <pre><span  id="error5" class="error">this fild is required</span></pre>
+      </div>
+      <div class="checked">
+        <pre>
+  <input type="checkbox" name="consent" id="check-box" onpaste="return false;">  I consent to being contacted
+      by the team *
+      
+</pre>
+      </div>
+      <pre><span id="error6" class="error">for submit form consent to conect </span></pre>
+      <pre>
+  <button type="submit" class="btn-submit" id="submit" >submit</button>
+</pre>
+
+  </form>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

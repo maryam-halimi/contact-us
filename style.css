@@ -1,0 +1,370 @@
+:root {
+    --color-back: #dff1e7;
+    --color-submit: #0c7d69;
+    --color-error: #d73c3c;
+    --color-text: #ffffff;
+    --color-border-circle: #87a3a6;
+    --color-border: #2b4246;
+  
+    --font-Weights: 400, 700
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url('https://fonts.google.com/specimen/Karla') format('woff');
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  
+  body {
+    width: 1300px;
+    height: 800px;
+    background: var(--color-back);
+    font-weight: var(--font-Weights);
+    font-size: 0.8rem;
+    color: var(--color-border);
+    letter-spacing: 0;
+  }
+  
+  :focus {
+    background-color: var(--color-back);
+    cursor: pointer;
+    border: 1px solid var(--color-back);
+  }
+  
+  
+  #container {
+    margin: 80px auto;
+    width: 500px;
+    height: 680px;
+    background-color: var(--color-text);
+    padding-left: 30px;
+    border-radius: 10px;
+  }
+  
+  .h1 {
+    font-size: 0.7rem;
+    margin-bottom: -15px;
+    margin-left: -47px;
+  
+  }
+  
+  .name-sureName {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+  }
+  
+  .emails {
+    display: flex;
+    justify-content: left;
+    width: 800px;
+    border-radius: 10px;
+  }
+  
+  #email-address {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  
+  }
+  
+  .email-text {
+    display: flex;
+    justify-content: center;
+    margin: 4px 20px auto;
+    height: 30px;
+  
+  }
+  
+  .message {
+    margin-top: 5px;
+    margin-bottom: -20px;
+  }
+  
+  .input-em {
+    width: 440px;
+    margin-left: -30px;
+  
+  }
+  
+  #error1 {
+    margin-top: 5px;
+    margin-left: -57px;
+  }
+  
+  #error2 {
+    margin-top: 5px;
+  }
+  
+  #error3 {
+    margin-top: 5px;
+  }
+  
+  #error5 {
+    margin-top: 5px;
+  }
+  
+  input:hover {
+    cursor: pointer;
+  }
+  
+  input {
+    border: 1px solid var(--color-border-circle);
+    border-radius: 4px;
+  }
+  
+  .query {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+  
+  }
+  
+  .messagee {
+    width: 440px;
+    height: 75px;
+  }
+  
+  .btn-submit {
+    width: 440px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color-submit);
+    color: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .checked {
+    margin-top: 35PX;
+    margin-bottom: 20PX;
+    margin-left: -14px;
+  }
+  
+  .message {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .query {
+    width: 440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .query-type {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  
+  
+  .s-requst {
+    border: 1px solid var(--color-border-circle);
+    border-radius: 3px;
+    width: 215px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+  
+  }
+  
+  .g-query {
+    border: 1px solid var(--color-border-circle);
+    border-radius: 3px;
+    width: 215px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -60px;
+  
+  }
+  
+  #first-name-input {
+    width: 215px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+  
+  #last-name-input {
+    width: 215px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: -30px;
+  }
+  
+  .first-name {
+    margin-left: -58px;
+  
+  }
+  
+  @media (max-width:480px) {
+    body {
+      width: 300px;
+      height: 960px;
+      box-sizing: border-box;
+    }
+  
+    #container {
+      margin: 30px;
+      width: 280px;
+      height: 910px;
+      background-color: var(--color-text);
+      padding-left: 30px;
+      border-radius: 10px;
+    }
+  
+    .name-sureName {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      padding: 10px 50px;
+    }
+  
+    .last-name {
+      padding-top: 10px;
+      margin-left: -60px;
+      margin-top: 10px;
+    }
+  
+    #first-name-input {
+      width: 240px;
+  
+    }
+  
+    #last-name-input {
+      margin-left: -60px;
+      width: 240px;
+    }
+  
+    #email-address {
+      margin-top: 10px;
+      margin-left: -8px;
+    }
+  
+    .input-em {
+      height: 33px;
+    }
+  
+    .query-type {
+      margin-left: -8px;
+    }
+  
+    .query {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin-left: -8px;
+  
+    }
+  
+    .g-query {
+      width: 237px;
+      height: 33px;
+    }
+  
+    .s-requst {
+      margin-top: -20px;
+      margin-left: -60px;
+      height: 33px;
+      width: 237px;
+    }
+  
+    .message {
+      margin-left: -3px;
+    }
+  
+    .messagee {
+      margin-left: -4px;
+      width: 237px;
+      height: 170px;
+    }
+  
+    .checked {
+      width: 0px;
+      height: 40px;
+    }
+  
+    .btn-submit {
+      width: 237px;
+      margin-left: -8px;
+    }
+  
+    #success {
+      background-color: #0c7d69;
+      width: 270px;
+      height: 50px;
+      border-radius: 3px;
+      font-size: 0.8rem;
+      color: var(--color-text);
+      position: absolute;
+      top: -40px;
+      left: 33px;
+      display: none;
+    }
+  
+    .successs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      position: relative;
+    }
+  
+  }
+  
+  .error {
+    /* border:1px solid var(--color-error); */
+    color: var(--color-error);
+    display: none;
+    margin-top: -10px;
+  }
+  
+  #success {
+    background-color: #0c7d69;
+    width: 275px;
+    height: 50px;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: var(--color-text);
+    position: absolute;
+    top: 33px;
+    display: none;
+  
+  }
+  
+  .successs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  #submit:focus {
+    opacity: 1;
+    background-color: #053f35;
+  
+  }
+  
+  .box-radio:has(> input[type="radio"]:checked) {
+    background-color: #36fab2;
+  }
